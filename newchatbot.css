@@ -1,0 +1,421 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* RWD reset*/
+
+img{ max-width: 100%;
+    height: auto;
+}
+
+*, *::before, *::after{
+    box-sizing:border-box
+}
+
+
+/*以下才是我的code!!*/
+
+.wrap{
+    margin: 0 auto
+    /* max-width: 1366px;  */
+    /*此寫法會把頁面限制住 */
+
+
+}
+
+.header{
+    max-width: 1366px;
+    margin:0 auto;
+
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/bg_home.svg);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: contain;
+  }
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 24px;
+    /* padding: 24px 140px; */
+}
+
+.logo{
+    width: 218px;
+    height: 40px;
+    display: block;
+}
+
+
+.feeRed{
+    width: 128px;
+    height: 40px;
+    background: #FF5D50 0% 0% no-repeat padding-box;
+    border: 1px solid #FF5D50;
+    border-radius: 22px;
+    opacity: 1;
+/* 上面是按鈕樣式，下面是文字樣式 */
+    text-align: center;
+    font: normal normal normal 16px/24px Noto Sans TC;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.sloganarea{
+    margin-bottom: 217px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@media(max-width:540px){
+    .slogan{
+        width: 90%;
+    }
+}
+
+.whole{
+    text-align: left;
+    font: normal normal bold 18px/26px Noto Sans TC;
+    letter-spacing: 0px;
+    color: #56C4C5;
+    opacity: 1;
+}
+
+.love{
+    text-align: left;
+    font: normal normal bold 48px/70px Noto Sans TC;
+    letter-spacing: 0px;
+    color: #221E1F;
+    opacity: 1;
+}
+
+.solution{
+    text-align: left;
+    font: normal normal normal 20px/29px Noto Sans TC;
+    letter-spacing: 0px;
+    color: #221E1F;
+    opacity: 1;
+}
+
+.robot{
+    display: block;
+    width: 50%;
+}
+
+@media(max-width:540px){
+    .robot{
+        width: 90%;
+    }
+}
+
+.container{
+    max-width: 1085px;
+    margin:0 auto
+    
+}
+
+.platform{
+    margin-bottom: 100px;
+}
+.title{
+    text-align: center;
+    font: normal normal bold 32px/46px Noto Sans TC;
+    letter-spacing: 0px;
+    color: #221E1F;
+    opacity: 1;
+}
+
+.socialmedia{
+    margin-top: 48px;
+    display: flex;
+    flex-wrap: wrap;
+    /* 如果設定換行，會因為子元素的寬度用百分比設定，而沒有效果 */
+    justify-content: space-around;
+}
+
+.sm1{
+    width: 30%;
+}
+
+@media(max-width:540px){
+    .sm1{
+        width: 100%;
+    }
+}
+
+.socialmedia img{
+    width: 90px;
+    height: 90px;
+    margin: auto;
+    display:block
+    /* 上面兩行要成對，圖片才會置中 */
+}
+
+.smtitle{
+    text-align: center;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    /* 下面是文字樣式 */
+    font: normal normal bold 24px/35px Noto Sans TC;
+    letter-spacing: 0px;
+    color: #221E1F;
+    opacity: 1;
+}
+
+.smcontent{
+    text-align: center;
+    font: normal normal normal 20px/29px Noto Sans TC;
+    letter-spacing: 0px;
+    color: #221E1F;
+    opacity: 1;
+    text-align: center;
+}
+/* role */
+
+.role{
+    margin-bottom: 100px;
+}
+.subtitle{
+    text-align: center;
+    font: normal normal normal 16px/24px Noto Sans TC;
+    letter-spacing: 0px;
+    color: #221E1F;
+    opacity: 1;
+    margin-top: 16px;
+    margin-bottom: 48px;
+}
+
+.audience{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.persona{
+    width: 22%;
+}
+
+@media(max-width:540px){
+    .persona{
+        width: 100%;
+    }
+}
+
+.ta{
+    width: 260px;
+    height: 260px;
+    display: block;
+    margin: auto;
+    /* 上面兩行要成對，圖片才會置中 */
+}
+
+.adtitle{
+    margin-top: 16px;
+    margin-bottom: 16px;
+    text-align: center;
+/* 下面是文字樣式 */
+    font: normal normal bold 16px/24px Noto Sans TC;
+    letter-spacing: 0px;
+    color: #56C4C5;
+    opacity: 1;
+}
+
+.adcontent{
+    text-align: center;
+}
+
+/* feature */
+
+.feature{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+@media(max-width:540px){
+    .feature{
+        flex-direction: column-reverse;
+    }
+}
+/* 上面這個是用來反轉順序的!!! */
+
+.ftleft{
+    width: 50%;
+    /* class命名要注意! 盡量精準 */
+}
+
+@media(max-width:540px){
+    .ftleft{
+        width: 100%;
+    }
+}
+
+
+
+.up{
+    display: flex;
+    flex-wrap: wrap;
+}
+.down{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card{
+    padding-top: 32px;
+    padding-left: 32px;
+    width: 50%;
+}
+
+@media(max-width:540px){
+    .card{
+        width: 100%;
+    }
+}
+
+
+.fttitle{
+    margin-top: 46.5px;
+    margin-bottom: 16px;
+
+    font: normal normal bold 18px/26px Noto Sans TC;
+    letter-spacing: 0px;
+    color: #221E1F;
+    opacity: 1;
+}
+
+.ftright{
+    width: 50%;
+}
+
+@media(max-width:540px){
+    .ftright{
+        width: 100%;
+    }
+}
+
+.tt{
+    text-align: start;
+}
+
+.sbt{
+    text-align: start;
+    margin-top: 16px;
+    margin-bottom: 24px;
+}
+
+.feeBlue{
+    width: 136px;
+    height: 49px;
+    background: #56C4C5 0% 0% no-repeat padding-box;
+    border: 1px solid #56C4C5;
+    border-radius: 27px;
+    opacity: 1;
+/* 上面是按鈕樣式，下面是文字樣式 */
+    text-align: center;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+
+/* review */
+
+.rw0{
+    margin-bottom: 48px;
+}
+
+.rw1{
+    display: flex;
+    flex-wrap: wrap;
+    /* 設定換行 */
+}
+
+.rw2{
+    width: 33%;
+    padding: 48px 32px 24px 32px;
+}
+
+.rw2 img{
+    width: 80px;
+    height: 80px;
+}
+
+.rw3{
+    display: flex;
+    justify-content: space-between;
+}
+
+@media(max-width:540px){
+    .guest1{
+        width: 100%;
+    }
+}
+
+@media(max-width:540px){
+    .guest2{
+        display: none;
+    }
+}
+
+@media(max-width:540px){
+    .guest3{
+        display: none;
+    }
+}
+
+hr {
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
