@@ -61,10 +61,10 @@ img{ max-width: 100%;
 /*以下才是我的code!!*/
 
 .wrap{
-    margin: 0 auto
-    /* max-width: 1366px;  */
+    margin: 0 auto;
+    max-width: 1366px; 
     /*此寫法會把頁面限制住 */
-
+    position:relative
 
 }
 
@@ -85,6 +85,8 @@ img{ max-width: 100%;
     justify-content: space-between;
     /* margin-top: 24px; */
     /* padding: 24px 140px; */
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .logo{
@@ -116,6 +118,8 @@ img{ max-width: 100%;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 @media(max-width:540px){
@@ -157,6 +161,21 @@ img{ max-width: 100%;
     .robot{
         width: 90%;
     }
+}
+
+.halfblueball{
+    height: 360px;
+    background-image: url(./chatTalker_images/ball01.svg);
+    background-repeat: no-repeat;
+    
+    width: 138px;
+    background-size: cover;
+    background-position: right;
+    /* 上面三行是學姊說一定要加的，別忘記阿，不然打屁股 */
+    position: absolute;
+    top: 590px;
+    z-index: -3;
+
 }
 
 .container{
@@ -225,7 +244,26 @@ img{ max-width: 100%;
 
 .role{
     margin-bottom: 100px;
+    position: relative;
 }
+
+.smallblueball{
+    height: 310px;
+    background-image: url(./chatTalker_images/ball02.svg);
+    background-repeat: no-repeat;
+    
+    width: 210px;
+    background-size: cover;
+    background-position: left;
+    /* 上面三行是學姊說一定要加的，別忘記阿，不然打屁股 */
+    position: absolute;
+    top: 1700px;
+    right: 0px;
+    /* right:-100px; */
+    /* 上面這行會很容一弄出x軸 */
+    z-index: -3;
+}
+
 .subtitle{
     text-align: center;
     font: normal normal normal 16px/24px Noto Sans TC;
@@ -244,6 +282,8 @@ img{ max-width: 100%;
 
 .persona{
     width: 22%;
+    background-color: #FFFFFF;
+    border-radius: 20px;
 }
 
 @media(max-width:540px){
@@ -373,6 +413,23 @@ img{ max-width: 100%;
 
 /* review */
 
+.review{
+    margin-bottom: 100px;
+    position: relative;
+}
+
+.yellowball{
+    height: 150px;
+    width: 150px;
+    background-image: url(./chatTalker_images/ball03.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 50px;
+    left: -20px;
+    z-index: -3;
+}
+
 .rw0{
     margin-bottom: 48px;
 }
@@ -433,7 +490,8 @@ hr {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    /* 上面這兩行設定ㄋ要注意! */
+    /* 上面這兩行設定要注意! */
+    /* background-size:cover可以使背景圖在百變比例時不變形，但會進行必要裁切 */
 }
 
 .exp{
