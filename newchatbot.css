@@ -445,9 +445,10 @@ img{ max-width: 100%;
     padding: 48px 32px 24px 32px;
 }
 
-.rw2 img{
+.user{
     width: 80px;
     height: 80px;
+    border-radius: 50%;
 }
 
 .rw3{
