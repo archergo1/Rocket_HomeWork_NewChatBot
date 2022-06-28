@@ -1,0 +1,162 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* RWD reset below*/
+
+img{ max-width: 100%;
+    height: auto;
+}
+
+*, *::before, *::after{
+    box-sizing:border-box
+}
+
+
+/*以下才是我的code!!*/
+
+.wrap{
+    margin: 0 auto;
+    max-width: 1366px; 
+    /*此寫法會把頁面限制住 */
+    position:relative
+
+}
+
+.header{
+    max-width: 1366px;
+    margin:0 auto;
+    padding-top: 24px;
+
+  }
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* margin-top: 24px; */
+    /* padding: 24px 140px; */
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.logo{
+    width: 218px;
+    height: 40px;
+    display: block;
+}
+
+
+.feeRed{
+    width: 128px;
+    height: 40px;
+    background: #FF5D50 0% 0% no-repeat padding-box;
+    border: 1px solid #FF5D50;
+    border-radius: 22px;
+    opacity: 1;
+/* 上面是按鈕樣式，下面是文字樣式 */
+    text-align: center;
+    font: normal normal normal 16px/24px Noto Sans TC;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.sloganarea{
+    margin-bottom: 217px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+@media(max-width:540px){
+    .slogan{
+        width: 90%;
+    }
+}
+
+.whole{
+    text-align: left;
+    font: normal normal bold 18px/26px Noto Sans TC;
+    letter-spacing: 0px;
+    color: #56C4C5;
+    opacity: 1;
+}
+
+.instruction{
+    text-align: left;
+    font: normal normal bold 48px/70px Noto Sans TC;
+    letter-spacing: 0px;
+    color: #221E1F;
+    opacity: 1;
+}
+
+.realize{
+    text-align: left;
+    font: normal normal normal 20px/29px Noto Sans TC;
+    letter-spacing: 0px;
+    color: #221E1F;
+    opacity: 1;
+}
+
+.shout{
+    display: block;
+    width: 50%;
+    height: 560px;
+    z-index: 2;
+}
+
+@media(max-width:540px){
+    .robot{
+        width: 90%;
+    }
+}
