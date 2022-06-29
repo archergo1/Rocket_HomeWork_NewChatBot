@@ -260,7 +260,7 @@ img{ max-width: 100%;
     top: 1700px;
     right: 0px;
     /* right:-100px; */
-    /* 上面這行有負職會很容一弄出x軸 */
+    /* 上面這行有負值會很容一弄出x軸 */
     z-index: -3;
 }
 
@@ -284,6 +284,7 @@ img{ max-width: 100%;
     width: 22%;
     background-color: #FFFFFF;
     border-radius: 20px; 
+    box-shadow: 0 0 10px 2px gray;
 }
 
 @media(max-width:540px){
@@ -357,6 +358,7 @@ img{ max-width: 100%;
     padding-top: 32px;
     padding-left: 32px;
     width: 50%;
+    
 }
 
 @media(max-width:540px){
@@ -436,19 +438,28 @@ img{ max-width: 100%;
 
 .rw1{
     display: flex;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     /* 設定換行 */
 }
 
 .rw2{
-    width: 33%;
+    width: 30%;
     padding: 48px 32px 24px 32px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+    /* 上面這行製造陰影效果 */
 }
 
 .user{
     width: 80px;
     height: 80px;
     border-radius: 50%;
+}
+
+.feedback{
+    margin-top: 10px;
 }
 
 .rw3{
